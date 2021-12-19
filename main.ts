@@ -1,5 +1,8 @@
+let i = 0
 input.onButtonPressed(Button.A, function () {
-    for (let index = 0; index <= 4; index++) {
-        basic.showNumber(index)
+    i = 0
+    while (i <= 50) {
+        basic.showNumber(i)
+        i += 1
     }
 })
