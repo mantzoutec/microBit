@@ -4,7 +4,7 @@ input.onButtonPressed(Button.A, function () {
     for (let δείκτη = 0; δείκτη <= 9; δείκτη++) {
         basic.showString("" + (δείκτη + 1))
         basic.showString("*")
-        basic.showString("5")
+        basic.showString("" + (αριθμός))
         basic.showString("=")
         basic.showString("" + ((δείκτη + 1) * αριθμός))
         basic.showString("")
