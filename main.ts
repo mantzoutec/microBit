@@ -1,18 +1,11 @@
-let ι = 0
-let λ = 0
 input.onButtonPressed(Button.A, function () {
-    ι = 1
-    λ = 5
-    while (ι <= 10) {
-        basic.showString("" + (ι))
+    for (let δείκτη = 0; δείκτη <= 9; δείκτη++) {
+        basic.showString("" + (δείκτη + 1))
         basic.showString("*")
-        basic.showString("" + (λ))
+        basic.showString("5")
         basic.showString("=")
-        basic.showString("" + (ι * λ))
+        basic.showString("" + ((δείκτη + 1) * 5))
         basic.showString("")
-        basic.showString("")
-        // Τι θα συμβεί εαν ξεχάσω να χρησιμοποιησω την συγκεκριμένη εντολή;
-        ι += 1
     }
 })
 input.onButtonPressed(Button.B, function () {
@@ -23,7 +16,6 @@ input.onButtonPressed(Button.B, function () {
             basic.showString("" + (j + 1))
             basic.showString("=")
             basic.showString("" + ((i + 1) * (j + 1)))
-            basic.showString("")
         }
     }
 })
