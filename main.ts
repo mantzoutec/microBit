@@ -1,21 +1,24 @@
+let αριθμός = 0
 input.onButtonPressed(Button.A, function () {
+    αριθμός = 5
     for (let δείκτη = 0; δείκτη <= 9; δείκτη++) {
         basic.showString("" + (δείκτη + 1))
         basic.showString("*")
         basic.showString("5")
         basic.showString("=")
-        basic.showString("" + ((δείκτη + 1) * 5))
+        basic.showString("" + ((δείκτη + 1) * αριθμός))
         basic.showString("")
     }
 })
 input.onButtonPressed(Button.B, function () {
-    for (let i = 0; i <= 9; i++) {
-        for (let j = 0; j <= 9; j++) {
-            basic.showString("" + (i + 1))
+    for (let δείκτη = 0; δείκτη <= 9; δείκτη++) {
+        for (let αριθμός = 0; αριθμός <= 9; αριθμός++) {
+            basic.showString("" + (δείκτη + 1))
             basic.showString("*")
-            basic.showString("" + (j + 1))
+            basic.showString("" + (αριθμός + 1))
             basic.showString("=")
-            basic.showString("" + ((i + 1) * (j + 1)))
+            basic.showString("" + ((δείκτη + 1) * (αριθμός + 1)))
+            basic.showString("")
         }
     }
 })
